@@ -14,12 +14,14 @@ Productes (de baix a dalt)
 * [Docker](https://docker.io): Crear containers
 * [Docker-compos](https://docs.docker.com/compose/): Crear containers que es relacionen
 * [Jenkins](https://jenkins.io/): Controlador i planificador de tests
-* 
 
-Alguns links interesnats:
+## Altres
+* [SonarQube](http://www.sonarqube.org/) : Controlador de qualitat del codi.
+
+## Links interesnats
 * https://blog.codecentric.de/en/2015/10/continuous-integration-platform-using-docker-container-jenkins-sonarqube-nexus-gitlab/
 ** https://github.com/marcelbirkner/docker-ci-tool-stack
 * https://blog.codecentric.de/en/2015/10/using-jenkins-job-dsl-for-job-lifecycle-management : Exemple d'us
 * https://github.com/blueimp/nightwatch
 * https://github.com/watarumohawk/nightwatchjs-e2e
-* 
+* http://juristr.com/blog/2014/02/nightwatch-test-automation/
