@@ -20,7 +20,7 @@ Productes (de baix a dalt)
 
 ## Links interesnats
 * https://blog.codecentric.de/en/2015/10/continuous-integration-platform-using-docker-container-jenkins-sonarqube-nexus-gitlab/
-** https://github.com/marcelbirkner/docker-ci-tool-stack
+ * https://github.com/marcelbirkner/docker-ci-tool-stack
 * https://blog.codecentric.de/en/2015/10/using-jenkins-job-dsl-for-job-lifecycle-management : Exemple d'us
 * https://github.com/blueimp/nightwatch
 * https://github.com/watarumohawk/nightwatchjs-e2e
