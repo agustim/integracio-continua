@@ -10,9 +10,9 @@ Productes (de baix a dalt)
 * [phantomjs](http://phantomjs.org/): Un browser per scripts.
 * [SeleniumIDE ComplementF irefox](https://addons.mozilla.org/ca/firefox/addon/selenium-ide/): "Graba" session web.
 * [Selenium-standalone](https://www.npmjs.com/package/selenium-server-standalone-jar): Modul npm amb una versió standalone.
-* [SeleniumIDE to nightwatchjs](https://github.com/timjrobinson/seleniumide2nightwatch): Converteix scripts grabats amb seleniumIDE a nightwatch
+* [SeleniumIDE to nightwatchjs](https://github.com/timjrobinson/seleniumide2nightwatch): Converteix scripts grabats amb seelniumIDE a nightwatch
 * [Docker](https://docker.io): Crear containers
-* [Docker-compos](https://docs.docker.com/compose/): Crear containers que es relacionen
+* [Docker-compos](https://docs.docker.com/compose/): Crear containers que es relacionen, necessitem la versio 2 (1.5 o superior)
 * [Jenkins](https://jenkins.io/): Controlador i planificador de tests
 
 ## Altres
@@ -25,3 +25,39 @@ Productes (de baix a dalt)
 * https://github.com/blueimp/nightwatch
 * https://github.com/watarumohawk/nightwatchjs-e2e
 * http://juristr.com/blog/2014/02/nightwatch-test-automation/
+
+## Preparar
+
+### Arrancar
+```
+docker-compose up
+```
+
+### Instal·lar Nodejs dintre del jenkins
+```
+docker exec -it ...jenkins /bin/bash
+```
+Dintre del container docker
+```
+apt update
+apt install npm 
+ln -s /usr/bin/nodejs /usr/bin/node
+```
+### Configurar una feina dintre del jenkins
+
+Jenkins -> New Item -> Freestyle project  => posar un nom
+
+Dintre de la "feina":
+* Posar a build:
+Execute shell
+```
+npm install
+npm test
+```
+* Posar dintre de Add post-build action
+Publish xUnit test results
+```
+test-reports.xml
+```
+
+
